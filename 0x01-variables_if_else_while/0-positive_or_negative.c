@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point for program execution
  *
  * Return: 0 uppon Success 
- * */
+ */
 int main(void)
 {
 	int n;
