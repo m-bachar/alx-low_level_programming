@@ -14,10 +14,11 @@ int main(void)
 	{
 		putchar(i);
 		if (i == 57)
-			break ;
+			break;
 		putchar(',');
 		putchar(' ');
 		i++;
 	}
+	putchar(10);
 	return (0);
 }
