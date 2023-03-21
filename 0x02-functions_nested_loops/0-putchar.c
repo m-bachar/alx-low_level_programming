@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Return: Always (1) uppon success
+ * Return: Always (0) uppon success
  */
 int	main(void)
 {
@@ -16,5 +16,5 @@ int	main(void)
 		i++;
 	}
 	write(1, "\n", 1);
-	return (1);
+	return (0);
 }
