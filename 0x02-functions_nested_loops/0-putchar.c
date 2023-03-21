@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /*
- * main - Entry point
+ * main - check the code
  *
- * Return: Always (0) uppon success
+ * Return: Always (0) uppon success.
  */
 int	main(void)
 {
