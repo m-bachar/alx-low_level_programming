@@ -1,0 +1,19 @@
+#include <unistd.h>
+
+/*
+ * main - Entry point
+ *
+ * Return: Always (1) uppon success
+ */
+int	main(void)
+{
+	char str[8] = "_putchar";
+	int i = 0;
+
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	return (1);
+}
