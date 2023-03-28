@@ -17,10 +17,12 @@ int _atoi(char *s)
 	output = 0;
 	while ((s[i] == ' ' || (s[i] >= '\t' && s[i] <= '\r')))
 		i++;
-	if (s[i] == '-')
-		sign *= -1;
-	if (s[i] == '-' || s[i] == '+')
+	while (s[i] == '-' || s[i] == '+')
+	{
+		if (s[i] == '-')
+			sign *= -1;
 		i++;
+	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		output = output * 10 + (s[i] - 48);
