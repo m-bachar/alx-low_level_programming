@@ -13,7 +13,7 @@ int	main(int argc, char **argv)
 
 	i = 0;
 	(void)argc;
-	while(argv[0][i])
+	while (argv[0][i])
 	{
 		_putchar(argv[0][i]);
 		i++;
