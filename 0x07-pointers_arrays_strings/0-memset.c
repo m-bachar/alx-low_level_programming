@@ -8,15 +8,14 @@
  * Return: Returns value to memory area S
  */
 
-char	*_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int	i;
+	int index;
 
-	while (n > 0)
+	for (index = 0; n > 0; n--)
 	{
-		s[i] = b;
-		i++;
-		n--;
+		*(s + index) = (b + 0);
+		index++;
 	}
 	return (s);
 }
