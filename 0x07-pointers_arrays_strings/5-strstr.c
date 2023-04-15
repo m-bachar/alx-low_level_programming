@@ -8,13 +8,11 @@
  *
  * Return: a pointer beg of substring or @Null if it not foound.
  */
-char	*_strstr(char *haystack, char *needle)
-{
-	unsigned int	i;
-	unsigned int	j;
 
-	i = 0;
-	j = 0;
+char *_strstr(char *haystack, char *needle)
+{
+	unsigned int i = 0, j = 0;
+
 	while (haystack[i])
 	{
 		while (needle[j] && (haystack[i] == needle[0]))
@@ -22,7 +20,7 @@ char	*_strstr(char *haystack, char *needle)
 			if (haystack[i + j] == needle[j])
 				j++;
 			else
-				break ;
+				break;
 		}
 		if (needle[j])
 		{

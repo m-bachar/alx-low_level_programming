@@ -7,17 +7,12 @@
  *
  * Return: Returns counter
  */
-unsigned int	_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	int	index;
-	int	index2;
-	int	counter;
-	int	cutter;
+	int index, index2, counter, cutter;
+
 
 	counter = 0;
-	index = 0;
-	index2 = 0;
-	cutter = 0;
 	for (index = 0; s[index] != '\0'; index++)
 	{
 		for (index2 = 0; accept[index2] != '\0'; index2++)
@@ -26,12 +21,11 @@ unsigned int	_strspn(char *s, char *accept)
 			if (s[index] == accept[index2])
 			{
 				counter++;
-				break ;
+				break;
 			}
 		}
 		if (counter == cutter)
-			break ;
+			break;
 	}
 	return (counter);
 }
-
