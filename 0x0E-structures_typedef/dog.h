@@ -3,7 +3,7 @@
 
 
 /**
-  * dog - struct named dog
+  * struct dog - struct named dog
   * @name: element of struct dog type char *
   * @age: element of struct dog type float
   * @owner: element of struct dog type char *
