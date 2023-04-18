@@ -3,7 +3,7 @@
 /**
   * ft_strlen - A function that calculates a string length
   * @str : string
-  * Return : Returns string length of @str
+  * Return : @str
  */
 
 static int	ft_strlen(char *str)
@@ -20,7 +20,7 @@ static int	ft_strlen(char *str)
   * ft_strcpy : A function that copies src to dest
   * @dest : destination
   * @src : sourcc
-  * Return : Returns destination @dest
+  * Return : @dest
  */
 
 static char	*ft_strcpy(char *dest, char *src)
