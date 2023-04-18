@@ -5,7 +5,7 @@
   * @str : string 
   * Return : Returns string length 
  */
-static int	ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
@@ -22,7 +22,7 @@ static int	ft_strlen(char *str)
   * Return : Returns destination
  */
 
-static char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
