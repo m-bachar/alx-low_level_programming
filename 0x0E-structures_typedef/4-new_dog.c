@@ -3,7 +3,7 @@
 /**
   * ft_strlen - A function that calculates a string length
   * @str : string
-  * Return : @str
+  * Return: @str
  */
 
 static int	ft_strlen(char *str)
@@ -17,10 +17,10 @@ static int	ft_strlen(char *str)
 }
 
 /**
-  * ft_strcpy : A function that copies src to dest
+  * ft_strcpy - A function that copies src to dest
   * @dest : destination
   * @src : sourcc
-  * Return : @dest
+  * Return: @dest
  */
 
 static char	*ft_strcpy(char *dest, char *src)
@@ -42,7 +42,7 @@ static char	*ft_strcpy(char *dest, char *src)
   * @name : dog's name
   * @age : dog's age
   * @owner : dog's owner
-  * Return : dog_t* struct
+  * Return: dog_t* struct
  */
 
 dog_t	*new_dog(char *name, float age, char *owner)
