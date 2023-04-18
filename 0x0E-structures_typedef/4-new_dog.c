@@ -46,22 +46,26 @@ static char	*ft_strcpy(char *dest, char *src)
 
 dog_t	*new_dog(char *name, float age, char *owner)
 {
-	dog_t	*new_dog;
+	dog_t	*dog;
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
-	new_dog = malloc(sizeof(dog_t));
-	if (new_dog = NULL)
+
+	dog = (dog_t *) malloc(sizeof(dog_t));
+	if (dog == NULL)
 		return (NULL);
-	new_dog->age = age;
-	new_dog->name = malloc(sizeof(char) * ft_strlen(name));
-	if ((*new_dog).name = NULL)
-		return (free(new_dog), NULL);
-	new_dog->owner = malloc(sizeof(char) * ft_strlen(owner));
-	if ((*new_dog).owner = NULL)
-		return (free(new_dog), NULL);
-	new_dog->name = ft_strcpy(new_dog->name, name);
-	new_dog->owner = ft_strcpy(new_dog->owner, owner);
-	new_dog->age = age;
-	return (new_dog);
+
+	dog->name = malloc(sizeof(char) * (ft_strlen(name) + 1));
+	if ((*dog).name == NULL)
+		return (free(dog), NULL);
+
+	dog->owner = malloc(sizeof(char) * (ft_strlen(owner) + 1));
+	if ((*dog).owner == NULL)
+		return (free(dog), NULL);
+
+	dog->name = ft_strcpy(dog->name, name);
+	dog->age = age;
+	dog->owner = ft_strcpy(dog->owner, owner);
+
+	return (dog);
 }
