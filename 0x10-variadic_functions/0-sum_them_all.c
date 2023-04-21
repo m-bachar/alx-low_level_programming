@@ -2,7 +2,7 @@
 
 /**
   * sum_them_all - Function that returns the sum of all its parameters.
-  * 
+  *
   * @n: Number of args.
   * @...: Ellipsis.
   * Return: Returns 0 if n == 0, else args sum.
