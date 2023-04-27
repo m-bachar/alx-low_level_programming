@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * list_len - A function that returns the length of a linked list.
+ * list_len - A function that returns the length of a list.
  *
  * @h: list_t.
- * Return: Returns the length of a linked list.
+ * Return: Returns the length of a list.
  */
 
 size_t	list_len(const list_t *h)
