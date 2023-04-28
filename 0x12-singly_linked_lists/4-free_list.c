@@ -8,11 +8,7 @@
 
 void	free_list(list_t *head)
 {
-	while (head != NULL)
-	{
-		free(head);
-		head = head->next;
-	}
+	free(head);
 }
 
 #include <stdlib.h>
@@ -39,5 +35,5 @@ int main(void)
     free_list(head);
     head = NULL;
     return (0);
-	
+
 }
