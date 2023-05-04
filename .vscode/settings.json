@@ -2,6 +2,8 @@
     "files.associations": {
         "*.excalidraw": "json",
         "*.excalidrawlib": "json",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c",
+        "lists.h": "c"
     }
 }
